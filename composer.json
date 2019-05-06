@@ -1,0 +1,27 @@
+{
+    "name": "yoshikyoto/riotgames-api",
+    "type": "projectlibrary",
+    "description": "Riotgames API Client",
+    "keywords": [
+        "riotgames",
+        "lol"
+    ],
+    "license": "MIT",
+    "require": {
+        "php": "^7.2.0"
+    },
+    "require-dev": {
+        "mockery/mockery": "^1.0",
+        "phpunit/phpunit": "^7.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Riotgames\\Api\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Roptgames\\Tests\\": "tests/"
+        }
+    }
+}
