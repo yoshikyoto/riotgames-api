@@ -7,7 +7,7 @@ class Factory
     public static function createSummoner(array $array): Summoner
     {
         return new Summoner(
-            $array['profileIconId'],
+            static::createProfileIconId($array['profileIconId']),
             $array['name'],
             $array['puuid'],
             $array['summonerLevel'],
@@ -15,5 +15,10 @@ class Factory
             $array['id'],
             $array['accountId']
         );
+    }
+
+    public static function createProfileIconId(string $value): ProfileIconId
+    {
+        return new ProfileIconId($value);
     }
 }

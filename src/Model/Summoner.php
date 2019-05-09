@@ -4,43 +4,22 @@ namespace Yoshikyoto\Riotgames\Model;
 
 class Summoner
 {
-    /**
-     * @var int
-     */
     private $profileIconId;
 
-    /**
-     * @var string
-     */
     private $name;
 
-    /**
-     * @var string
-     */
     private $puuid;
 
-    /**
-     * @var int
-     */
     private $summonerLevel;
 
-    /**
-     * @var int
-     */
     private $revisionDate;
 
-    /**
-     * @var string
-     */
     private $id;
 
-    /**
-     * @var string
-     */
     private $accountId;
 
     public function __construct(
-        int $profileIconId,
+        ProfileIconId $profileIconId,
         string $name,
         string $puuid,
         int $summonerLevel,
@@ -57,7 +36,7 @@ class Summoner
         $this->accountId = $accountId;
     }
 
-    public function getProfileIconId(): int
+    public function getProfileIconId(): ProfileIconId
     {
         return $this->profileIconId;
     }
