@@ -11,8 +11,11 @@ class Client
 {
     private $baseUri = 'https://na1.api.riotgames.com';
 
-    public function __construct($apiKey)
+    private $apiKey;
+
+    public function __construct(string $apiKey)
     {
+        $this->apiKey = $apiKey;
         $this->client = new GuzzleClient();
     }
 }

@@ -17,12 +17,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Riotgames\\Api\\": "src/"
+            "Yoshikyoto\\Riotgames\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Roptgames\\Test\\Api\\": "test/"
+            "Roptgames\\Test\\": "test/"
         }
     }
 }
