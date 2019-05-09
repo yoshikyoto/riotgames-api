@@ -19,7 +19,7 @@ class Summoner
     private $accountId;
 
     public function __construct(
-        ProfileIconId $profileIconId,
+        string $profileIconId,
         string $name,
         string $puuid,
         int $summonerLevel,
@@ -36,7 +36,7 @@ class Summoner
         $this->accountId = $accountId;
     }
 
-    public function getProfileIconId(): ProfileIconId
+    public function getProfileIconId(): string
     {
         return $this->profileIconId;
     }

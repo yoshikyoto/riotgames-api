@@ -7,7 +7,7 @@ class Factory
     public static function createSummoner(array $array): Summoner
     {
         return new Summoner(
-            static::createProfileIconId($array['profileIconId']),
+            $array['profileIconId'],
             $array['name'],
             $array['puuid'],
             $array['summonerLevel'],
@@ -17,8 +17,29 @@ class Factory
         );
     }
 
-    public static function createProfileIconId(string $value): ProfileIconId
+    /**
+     * @param array $array
+     * @return ChampionMastery[]
+     */
+    public static function createChampionMasteries(array $array): array
     {
-        return new ProfileIconId($value);
+        return array_map(function ($item) {
+            return static::createChampionMastery($item);
+        }, $array);
+    }
+
+    public static function createChampionMastery(array $array): ChampionMastery
+    {
+        return new ChampionMastery(
+            $array['chestGranted'],
+            $array['championLevel'],
+            $array['championPoints'],
+            $array['championId'],
+            $array['championPointsUntilNextLevel'],
+            $array['lastPlayTime'],
+            $array['tokensEarned'],
+            $array['championPointsSinceLastLevel'],
+            $array['summonerId']
+        );
     }
 }

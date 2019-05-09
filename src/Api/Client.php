@@ -10,6 +10,7 @@ use GuzzleHttp\Client as GuzzleClient;
 class Client
 {
     use \Yoshikyoto\Riotgames\Api\Summoner\SummonerV4;
+    use \Yoshikyoto\Riotgames\Api\ChampionMastery\ChampionMasteryV4;
 
     /**
      * @var string
