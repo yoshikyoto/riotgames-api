@@ -1,6 +1,6 @@
 <?php
 
-namespace Riotgames\Api;
+namespace Yoshikyoto\Riotgames\Api;
 
 use GuzzleHttp\Client as GuzzleClient;
 
