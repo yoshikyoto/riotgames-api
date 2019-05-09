@@ -7,7 +7,9 @@ namespace Yoshikyoto\Riotgames\Api\Summoner;
  */
 trait SummonerV4
 {
-    public function getSummoner()
+    public function getSummoner($summonerName)
     {
+        $path = "/lol/summoner/v4/summoners/by-name/{$summonerName}";
+        $this->get($path);
     }
 }
