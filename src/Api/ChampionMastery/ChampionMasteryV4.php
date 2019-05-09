@@ -7,7 +7,10 @@ namespace Riotgames\Api\ChampionMastery;
  */
 trait ChampionMasteryV4
 {
-    public function getChampionMastery()
+    public function getChampionMastery($summonerId)
     {
+        $path = "/lol/champion-mastery/v4/champion-masteries/by-summoner/{$summonerId}";
+        $array = $this->get($path);
+
     }
 }
