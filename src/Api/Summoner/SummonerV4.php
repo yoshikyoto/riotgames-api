@@ -1,6 +1,6 @@
 <?php
 
-namespace Riotgames\Api\Summoner;
+namespace Yoshikyoto\Riotgames\Api\Summoner;
 
 /**
  * @see https://developer.riotgames.com/api-methods/#summoner-v4/GET_getBySummonerName

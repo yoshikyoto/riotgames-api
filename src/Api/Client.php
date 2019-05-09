@@ -9,6 +9,8 @@ use GuzzleHttp\Client as GuzzleClient;
  */
 class Client
 {
+    use \Yoshikyoto\Riotgames\Api\Summoner\SummonerV4;
+
     private $baseUri = 'https://na1.api.riotgames.com';
 
     private $apiKey;
