@@ -4,11 +4,32 @@ namespace Yoshikyoto\Riotgames\Model;
 
 class Champion
 {
+    /**
+     * @var string e.g. Aatroc
+     */
     private $id;
+
+    /**
+     * @var string e.g. 266
+     */
     private $key;
+
+    /**
+     * @var string e.g. エイトロックス
+     */
     private $name;
+
+    /**
+     * @var string e.g. ダーキンの暴剣
+     */
     private $title;
+
+    /**
+     * @var string
+     * e.g. ヴォイドからシュリーマを守り抜いた誇り高き存在であったエイトロックスとその同胞は、...
+     */
     private $blurb;
+
     private $image;
 
     public function __construct(
