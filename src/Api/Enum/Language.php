@@ -1,6 +1,6 @@
 <?php
 
-namespace Yoshikyoto\Riotgames\Api\Const;
+namespace Yoshikyoto\Riotgames\Api\Enum;
 
 
 class Language
