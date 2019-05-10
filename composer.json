@@ -1,6 +1,6 @@
 {
     "name": "yoshikyoto/riotgames-api",
-    "type": "projectlibrary",
+    "type": "library",
     "description": "Riotgames API Client",
     "keywords": [
         "riotgames",
@@ -9,8 +9,7 @@
     "license": "MIT",
     "require": {
         "php": "^7.2.0",
-        "guzzlehttp/guzzle": "^6.3",
-        "composer/semver": "^1.5"
+        "guzzlehttp/guzzle": "^6.3"
     },
     "require-dev": {
         "mockery/mockery": "^1.0",
