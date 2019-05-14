@@ -5,7 +5,7 @@ namespace Yoshikyoto\Riotgames\Model;
 class Champion
 {
     /**
-     * @var string e.g. Aatroc
+     * @var string e.g. Aatrox
      */
     private $id;
 
